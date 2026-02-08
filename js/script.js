@@ -1,5 +1,40 @@
 // Main JavaScript for 638 Government Services Website
 
+// ===== Active Navigation State =====
+function setActiveNavItem() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    // Remove active class from all nav links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+    });
+    
+    // Add active class to current page link
+    navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        
+        // Check for exact match
+        if (linkHref === currentPage) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+        // Check for index/home page
+        else if ((currentPage === '' || currentPage === 'index.html') && 
+                    (linkHref === 'index.html' || linkHref === './' || linkHref === '/')) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+        // Check for partial matches (for hash links on home page)
+        else if (currentPage === 'index.html' && linkHref.startsWith('#')) {
+            // Home page sections - don't mark as active
+        }
+    });
+}
+
+// Call this function in DOMContentLoaded
+
 document.addEventListener('DOMContentLoaded', function() {
     // ===== Initialize Components =====
     initNavigation();

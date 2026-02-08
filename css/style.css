@@ -1,3 +1,6 @@
+/* ===== Imports ===== */
+@import url('components.css');
+
 /* ===== CSS Variables ===== */
 :root {
     --primary-blue: #0a2540;
@@ -124,6 +127,43 @@ a {
     color: var(--accent-blue);
     background-color: var(--light-blue);
 }
+
+/* ===== Active Navigation Styles ===== */
+.nav-link.active {
+    color: var(--accent-blue) !important;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: var(--accent-blue);
+    border-radius: 1px;
+}
+
+/* Mobile specific active styles */
+@media (max-width: 991.98px) {
+    .nav-link.active {
+        background-color: var(--light-blue);
+    }
+    
+    .nav-link.active::after {
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Hover effects for non-active links */
+.nav-link:not(.active):hover {
+    color: var(--accent-blue);
+    background-color: var(--light-blue);
+}
+
 
 /* ===== Hero Section ===== */
 .hero {

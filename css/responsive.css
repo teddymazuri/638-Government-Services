@@ -1,0 +1,171 @@
+/* ===== Responsive Styles ===== */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .hero {
+        padding-top: 80px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-visual {
+        height: 300px;
+        margin-top: 3rem;
+    }
+    
+    .section-padding {
+        padding: 4rem 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-timeline::before {
+        left: 20px;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        margin-right: 1.5rem;
+    }
+    
+    .footer .row > div {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-text {
+        font-size: 1.125rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+    
+    .hero-buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+    
+    .service-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+    
+    .floating-card {
+        width: 120px;
+        padding: 1rem;
+    }
+    
+    .floating-card i {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-collapse {
+        background: var(--white);
+        padding: 1rem;
+        border-radius: var(--border-radius-md);
+        box-shadow: var(--shadow-lg);
+        margin-top: 1rem;
+    }
+    
+    .nav-item .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-stats .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-stats .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+    
+    .process-timeline::before {
+        left: 15px;
+    }
+    
+    .step-number {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+    
+    .image-placeholder {
+        height: 300px;
+        font-size: 6rem;
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .contact-form,
+    .back-to-top,
+    .social-links {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    .hero {
+        color: #000;
+        background: none !important;
+    }
+    
+    .section-padding {
+        padding: 2rem 0;
+    }
+}

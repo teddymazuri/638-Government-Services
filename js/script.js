@@ -31,7 +31,7 @@ const CONFIG = {
                 <a class="navbar-brand" href="index.html">
                     <i class="fas fa-shield-alt me-2"></i>
                     <span class="brand-main">638</span>
-                    <span class="brand-accent">GOVT. SERVICES</span>
+                    <span class="brand-accent">GOV SERVICES</span>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
@@ -119,7 +119,7 @@ function loadFooter() {
                 <div class="row">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="footer-brand">
-                            <h3>638 <span>GOVT. SERVICES</span></h3>
+                            <h3>638 <span>GOV SERVICES</span></h3>
                             <p>Delivering excellence in public service through technological innovation and strategic partnership.</p>
                         </div>
 

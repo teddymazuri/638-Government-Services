@@ -68,6 +68,7 @@ const CONFIG = {
                                 How We Work
                             </a>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link ${currentPage === 'contact.html' ? 'active' : ''}" 
                                href="contact.html" 
@@ -75,6 +76,7 @@ const CONFIG = {
                                 Contact
                             </a>
                         </li>
+                        -->
                         <li class="nav-item ms-lg-3">
                             <a class="btn btn-primary" href="contact.html">Get Started</a>
                         </li>

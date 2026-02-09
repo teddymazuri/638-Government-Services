@@ -5,6 +5,9 @@
     padding: 160px 0 100px;
     position: relative;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .page-header::before {
@@ -16,6 +19,7 @@
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" opacity="0.05"><path d="M0,0h1000v1000H0V0z M250,250h500v500H250V250z"/></svg>');
     background-size: 400px;
+    z-index: 1;
 }
 
 .page-header-content {
@@ -34,6 +38,51 @@
     color: rgba(255, 255, 255, 0.9);
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Home page hero background */
+.home-hero {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.85) 0%, rgba(0, 29, 61, 0.9) 100%), 
+                url('../assets/home-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Services page hero background */
+.services-hero {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.85) 0%, rgba(0, 29, 61, 0.9) 100%), 
+                url('../assets/services-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* About page hero background */
+.about-hero {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.85) 0%, rgba(0, 29, 61, 0.9) 100%), 
+                url('../assets/about-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Process page hero background */
+.process-hero {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.85) 0%, rgba(0, 29, 61, 0.9) 100%), 
+                url('../assets/process-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Contact page hero background */
+.contact-hero {
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.85) 0%, rgba(0, 29, 61, 0.9) 100%), 
+                url('../assets/contact-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* ===== Breadcrumb ===== */

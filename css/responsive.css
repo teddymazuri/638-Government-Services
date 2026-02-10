@@ -260,22 +260,3 @@
         margin-right: 0;
     }
 }
-
-
-/* Immediate fix for contact page hero */
-@media (max-width: 767.98px) {
-    .contact-hero {
-        background: linear-gradient(135deg, rgba(10, 37, 64, 0.95) 0%, rgba(0, 29, 61, 0.98) 100%) !important;
-        background-attachment: scroll !important;
-        overflow: hidden !important;
-    }
-    
-    .contact-hero::before {
-        display: none !important; /* Temporarily hide problematic background */
-    }
-    
-    /* Alternative: Use a solid color if images cause issues */
-    body[class*="contact"] .page-header {
-        background: var(--primary-blue) !important;
-    }
-}

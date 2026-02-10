@@ -914,13 +914,16 @@ a {
     
     .navbar-collapse {
         background: var(--white);
+        /*
         padding: 1rem;
         border-radius: var(--border-radius-md);
         box-shadow: var(--shadow-lg);
         margin-top: 1rem;
         /* Ensure it fits within the viewport */
+        /*
         width: calc(100% - 1rem);
         margin-left: 0.5rem;
+        */
         margin-right: 0.5rem;
     }
 

@@ -1092,3 +1092,100 @@ a {
 .footer-logo[src*="logo-footer.png"]:not([src]) {
     display: none;
 }
+
+/* ===== Footer Mobile Center Alignment ===== */
+
+/* Center all footer columns on mobile */
+@media (max-width: 768px) {
+    .footer .col-lg-4,
+    .footer .col-lg-2,
+    .footer .col-md-4 {
+        text-align: center !important;
+    }
+    
+    /* Center footer headings */
+    .footer h5 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Center footer links */
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    /* Center list items */
+    .footer-links li {
+        text-align: center;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    /* Center the social links */
+    .social-links {
+        justify-content: center;
+    }
+    
+    /* Center footer logo */
+    .footer-logo-container {
+        justify-content: center;
+        display: flex;
+    }
+    
+    /* Center newsletter form */
+    .newsletter-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Center footer bottom text */
+    .footer-bottom .col-md-6 {
+        text-align: center !important;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-bottom .col-md-6:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Adjust footer brand text */
+    .footer-brand p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+    }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 575.98px) {
+    /* Further adjustments for very small screens */
+    .footer-links li {
+        max-width: 180px;
+    }
+    
+    .newsletter-form {
+        max-width: 100%;
+    }
+    
+    /* Ensure proper spacing */
+    .footer .mb-5.mb-md-0 {
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .footer .mb-5.mb-lg-0 {
+        margin-bottom: 2.5rem !important;
+    }
+}
+
+/* Optional: Add hover effects that work with centered layout */
+@media (max-width: 768px) {
+    .footer-links a:hover {
+        padding-left: 0;
+        transform: translateX(5px);
+        display: inline-block;
+    }
+}

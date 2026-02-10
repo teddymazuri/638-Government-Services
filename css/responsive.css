@@ -169,3 +169,70 @@
         padding: 2rem 0;
     }
 }
+
+/* ===== Logo Responsive Styles ===== */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .navbar-logo {
+        height: 35px;
+    }
+    
+    .navbar.scrolled .navbar-logo {
+        height: 30px;
+    }
+    
+    .footer-logo {
+        height: 45px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .navbar-logo {
+        height: 32px;
+        margin-right: 8px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .brand-text {
+        font-size: 0.9em;
+    }
+    
+    .footer-logo {
+        height: 40px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-logo {
+        height: 28px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .footer-logo {
+        height: 35px;
+    }
+}
+
+/* Very small devices */
+@media (max-width: 400px) {
+    .navbar-brand .brand-text {
+        display: none;
+    }
+    
+    .navbar-logo {
+        margin-right: 0;
+    }
+}

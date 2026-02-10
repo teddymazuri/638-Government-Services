@@ -996,3 +996,99 @@ a {
         padding: 2rem 0;
     }
 }
+
+/* ===== Navigation Logo Styles ===== */
+.navbar-logo {
+    height: 45px;
+    width: auto;
+    max-width: 200px;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.navbar.scrolled .navbar-logo {
+    height: 35px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 35px;
+        margin-right: 10px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    
+    .navbar.scrolled .navbar-logo {
+        height: 30px;
+    }
+}
+
+/* ===== Footer Logo Styles ===== */
+.footer-logo-container {
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+    height: 50px;
+    width: auto;
+    max-width: 250px;
+    /* filter: brightness(0) invert(1); */
+    transition: all 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.9;
+}
+
+/* Footer brand text adjustments */
+.footer-brand h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+    margin-top: 1rem;
+}
+
+/* Footer mobile adjustments */
+@media (max-width: 768px) {
+    .footer-logo {
+        height: 40px;
+    }
+    
+    .footer-brand {
+        text-align: center;
+    }
+    
+    .footer-logo-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* ===== Logo Fallback Styles ===== */
+/* If logo doesn't exist, show text only */
+.navbar-logo[src*="logo-nav.png"]:not([src]) + .brand-text {
+    margin-left: 0;
+}
+
+.footer-logo[src*="logo-footer.png"]:not([src]) {
+    display: none;
+}

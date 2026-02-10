@@ -29,9 +29,11 @@ const CONFIG = {
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <i class="fas fa-shield-alt me-2"></i>
-                    <span class="brand-main">638</span>
-                    <span class="brand-accent">GOV SERVICES</span>
+                    <img src="assets/logo-nav.png" alt="${CONFIG.siteName}" class="navbar-logo">
+                    <!--<span class="brand-text">
+                        <span class="brand-main">638</span>
+                        <span class="brand-accent">GOV SERVICES</span>
+                    </span>-->
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
@@ -119,7 +121,9 @@ function loadFooter() {
                 <div class="row">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="footer-brand">
-                            <h3>638 <span>GOV SERVICES</span></h3>
+                            <div class="footer-logo-container">
+                                <img src="assets/logo-footer.png" alt="${CONFIG.siteName}" class="footer-logo">
+                            </div>
                             <p>Delivering excellence in public service through technological innovation and strategic partnership.</p>
                         </div>
 
